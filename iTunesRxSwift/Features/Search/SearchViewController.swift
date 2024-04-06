@@ -9,13 +9,14 @@ import UIKit
 import SnapKit
 import RxSwift
 import RxCocoa
-
+import Kingfisher
 
 final class SearchviewController: BaseViewController {
     
     private let searchController = UISearchController(searchResultsController: nil)
     private let appTableView: UITableView = {
         let view = UITableView(frame: .zero)
+        view.separatorStyle = .none
         view.register(SearchTableViewCell.self, forCellReuseIdentifier: SearchTableViewCell.identifier)
         return view
     }()
@@ -42,8 +43,26 @@ final class SearchviewController: BaseViewController {
             .bind(to: appTableView.rx.items(cellIdentifier: SearchTableViewCell.identifier,
                                             cellType: SearchTableViewCell.self)) { (row, element, cell) in
                 cell.appNameLabel.text = element.trackCensoredName
+                cell.appIconImageView.kf.setImage(with: URL(string: element.artworkUrl512))
+                
+                let score = String(format: "%.1f", element.averageUserRating)
+                cell.scoreLabel.text = score
+                cell.artistNameLabel.text = element.artistName
+                cell.genreLabel.text = element.genres.first
             }
             .disposed(by: disposeBag)
+        
+        Observable.zip(appTableView.rx.modelSelected(App.self),
+                       appTableView.rx.itemSelected)
+        .map { $0.0 }
+        .subscribe(with: self) { owner, app in
+            let vc = AppDetailViewController()
+            vc.selectedApp = app
+            
+            owner.navigationController?.pushViewController(vc, animated: true)
+        }
+        .disposed(by: disposeBag)
+        
     }
     
     override func configureHierarchy() {
@@ -57,6 +76,8 @@ final class SearchviewController: BaseViewController {
     }
     
     override func configureView() {
+        appTableView.delegate = self
+        
         navigationItem.title = "검색"
         
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -80,9 +101,13 @@ extension SearchviewController: UISearchResultsUpdating {
             return
         }
         
-        // TODO: 여기서 RxSwift debounce로 검색어 보내고 받기 필요
-        print("검색어: \(query)")
+        // TODO: 여기서 RxSwift debounce로 실시간 검색어 보내고 받기 필요
+        // print("검색어: \(query)")
     }
-    
-    
+}
+
+extension SearchviewController: UITableViewDelegate {
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 80
+//    }
 }

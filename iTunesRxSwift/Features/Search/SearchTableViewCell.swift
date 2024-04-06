@@ -35,11 +35,53 @@ final class SearchTableViewCell: UITableViewCell {
     let downloadButton: UIButton = {
         let button = UIButton()
         button.setTitle("받기", for: .normal)
+        button.titleLabel?.font = .boldSystemFont(ofSize: 16)
         button.setTitleColor(.systemBlue, for: .normal)
         button.isUserInteractionEnabled = true
-        button.backgroundColor = .lightGray
+        button.backgroundColor = .systemGray5
         button.layer.cornerRadius = 16
         return button
+    }()
+    
+    private let infoStackView: UIStackView = {
+        let view = UIStackView()
+        view.distribution = .fillEqually
+        return view
+    }()
+    
+    private let scoreView: UIView = {
+        let view = UIView(frame: .zero)
+        return view
+    }()
+    
+    private let scoreImageView: UIImageView = {
+        let view = UIImageView()
+        view.image = UIImage(systemName: "star.fill")
+        view.tintColor = .systemGray
+        return view
+    }()
+    
+    let scoreLabel: UILabel = {
+        let view = UILabel()
+        view.textColor = .systemGray
+        view.font = .systemFont(ofSize: 13)
+        return view
+    }()
+    
+    let artistNameLabel: UILabel = {
+        let view = UILabel()
+        view.textColor = .systemGray
+        view.textAlignment = .center
+        view.font = .systemFont(ofSize: 13)
+        return view
+    }()
+    
+    let genreLabel: UILabel = {
+        let view = UILabel()
+        view.textColor = .systemGray
+        view.font = .systemFont(ofSize: 13)
+        view.textAlignment = .right
+        return view
     }()
      
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -61,9 +103,17 @@ final class SearchTableViewCell: UITableViewCell {
     }
     
     private func configure() {
-        contentView.addSubview(appNameLabel)
-        contentView.addSubview(appIconImageView)
-        contentView.addSubview(downloadButton)
+        [appNameLabel, appIconImageView, downloadButton, infoStackView].forEach {
+            contentView.addSubview($0)
+        }
+        
+        [scoreImageView, scoreLabel].forEach {
+            scoreView.addSubview($0)
+        }
+        
+        [scoreView, artistNameLabel, genreLabel].forEach {
+            infoStackView.addArrangedSubview($0)
+        }
         
         appIconImageView.snp.makeConstraints {
             $0.centerY.equalToSuperview()
@@ -83,6 +133,38 @@ final class SearchTableViewCell: UITableViewCell {
             $0.height.equalTo(32)
             $0.width.equalTo(72)
         }
+        
+        infoStackView.snp.makeConstraints { make in
+            make.top.equalTo(appIconImageView.snp.bottom).offset(8)
+            make.horizontalEdges.equalTo(contentView.safeAreaLayoutGuide).inset(16)
+            make.bottom.equalTo(contentView.snp.bottom).offset(-8)
+            make.height.equalTo(20)
+        }
+        
+        scoreImageView.snp.makeConstraints { make in
+            make.centerY.equalTo(scoreView.safeAreaLayoutGuide)
+            make.leading.equalTo(scoreView.snp.leading).offset(4)
+            make.size.equalTo(16)
+        }
+        
+        scoreLabel.snp.makeConstraints { make in
+            make.centerY.equalTo(scoreView.safeAreaLayoutGuide)
+            make.leading.equalTo(scoreImageView.snp.trailing).offset(4)
+            make.trailing.equalTo(scoreView.safeAreaLayoutGuide).inset(4)
+            make.verticalEdges.equalTo(scoreView.safeAreaLayoutGuide).inset(4)
+        }
+        
+//        scoreView.snp.makeConstraints { make in
+//            make.height.equalTo(infoStackView)
+//        }
+//        
+//        sellerNameLabel.snp.makeConstraints { make in
+//            make.height.equalTo(infoStackView)
+//        }
+//        
+//        genreLabel.snp.makeConstraints { make in
+//            make.height.equalTo(infoStackView)
+//        }
     }
 }
 

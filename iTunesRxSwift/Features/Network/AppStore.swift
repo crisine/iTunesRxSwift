@@ -15,5 +15,9 @@ struct AppStore: Decodable {
 
 // MARK: - Result
 struct App: Decodable {
+    let artworkUrl512: String
     let trackCensoredName: String
+    let averageUserRating: Double
+    let artistName: String
+    let genres: [String]
 }
