@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA1AD3862BC1916800EE3E36 /* iTunesAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AD3852BC1916800EE3E36 /* iTunesAPIManager.swift */; };
+		FA1AD3892BC191E900EE3E36 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FA1AD3882BC191E900EE3E36 /* Alamofire */; };
+		FA1AD38B2BC1927700EE3E36 /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AD38A2BC1927700EE3E36 /* iTunesAPI.swift */; };
+		FA1AD38D2BC19C3B00EE3E36 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AD38C2BC19C3B00EE3E36 /* AppStore.swift */; };
+		FA1AD38F2BC19D8000EE3E36 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AD38E2BC19D8000EE3E36 /* SearchTableViewCell.swift */; };
+		FA1AD3912BC19EDD00EE3E36 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AD3902BC19EDD00EE3E36 /* SearchViewModel.swift */; };
 		FAE227E62BC143B600DFD8C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE227E52BC143B600DFD8C3 /* AppDelegate.swift */; };
 		FAE227E82BC143B600DFD8C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE227E72BC143B600DFD8C3 /* SceneDelegate.swift */; };
 		FAE227EA2BC143B600DFD8C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE227E92BC143B600DFD8C3 /* ViewController.swift */; };
@@ -22,9 +28,16 @@
 		FAE228132BC14A8200DFD8C3 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE228122BC14A8200DFD8C3 /* GamesViewController.swift */; };
 		FAE228152BC14AA300DFD8C3 /* AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE228142BC14AA300DFD8C3 /* AppsViewController.swift */; };
 		FAE228172BC14ABC00DFD8C3 /* AppleArcadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE228162BC14ABC00DFD8C3 /* AppleArcadeViewController.swift */; };
+		FAE228192BC16A3900DFD8C3 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FAE228182BC16A3900DFD8C3 /* RxCocoa */; };
+		FAE2281B2BC16A3900DFD8C3 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FAE2281A2BC16A3900DFD8C3 /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA1AD3852BC1916800EE3E36 /* iTunesAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPIManager.swift; sourceTree = "<group>"; };
+		FA1AD38A2BC1927700EE3E36 /* iTunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPI.swift; sourceTree = "<group>"; };
+		FA1AD38C2BC19C3B00EE3E36 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		FA1AD38E2BC19D8000EE3E36 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		FA1AD3902BC19EDD00EE3E36 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		FAE227E22BC143B600DFD8C3 /* iTunesRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE227E52BC143B600DFD8C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAE227E72BC143B600DFD8C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +61,9 @@
 			files = (
 				FAE228012BC143E900DFD8C3 /* Kingfisher in Frameworks */,
 				FAE227FC2BC143DB00DFD8C3 /* SnapKit in Frameworks */,
+				FAE2281B2BC16A3900DFD8C3 /* RxSwift in Frameworks */,
+				FA1AD3892BC191E900EE3E36 /* Alamofire in Frameworks */,
+				FAE228192BC16A3900DFD8C3 /* RxCocoa in Frameworks */,
 				FAE227FE2BC143DB00DFD8C3 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +113,7 @@
 		FAE228052BC147C400DFD8C3 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				FAE2281C2BC1906B00DFD8C3 /* Network */,
 				FAE228082BC1483200DFD8C3 /* TabBar */,
 				FAE2280F2BC149CB00DFD8C3 /* Today */,
 				FAE2280E2BC149C700DFD8C3 /* Games */,
@@ -118,6 +135,8 @@
 		FAE228092BC1483900DFD8C3 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				FA1AD38E2BC19D8000EE3E36 /* SearchTableViewCell.swift */,
+				FA1AD3902BC19EDD00EE3E36 /* SearchViewModel.swift */,
 				FAE2280A2BC1484A00DFD8C3 /* SearchViewController.swift */,
 			);
 			path = Search;
@@ -155,6 +174,16 @@
 			path = Today;
 			sourceTree = "<group>";
 		};
+		FAE2281C2BC1906B00DFD8C3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FA1AD3852BC1916800EE3E36 /* iTunesAPIManager.swift */,
+				FA1AD38A2BC1927700EE3E36 /* iTunesAPI.swift */,
+				FA1AD38C2BC19C3B00EE3E36 /* AppStore.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,6 +204,9 @@
 				FAE227FB2BC143DB00DFD8C3 /* SnapKit */,
 				FAE227FD2BC143DB00DFD8C3 /* SnapKit-Dynamic */,
 				FAE228002BC143E900DFD8C3 /* Kingfisher */,
+				FAE228182BC16A3900DFD8C3 /* RxCocoa */,
+				FAE2281A2BC16A3900DFD8C3 /* RxSwift */,
+				FA1AD3882BC191E900EE3E36 /* Alamofire */,
 			);
 			productName = iTunesRxSwift;
 			productReference = FAE227E22BC143B600DFD8C3 /* iTunesRxSwift.app */;
@@ -208,6 +240,7 @@
 				FAE227F92BC143CF00DFD8C3 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				FAE227FA2BC143DB00DFD8C3 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				FAE227FF2BC143E900DFD8C3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				FA1AD3872BC191E900EE3E36 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = FAE227E32BC143B600DFD8C3 /* Products */;
 			projectDirPath = "";
@@ -239,12 +272,17 @@
 				FAE228172BC14ABC00DFD8C3 /* AppleArcadeViewController.swift in Sources */,
 				FAE2280B2BC1484A00DFD8C3 /* SearchViewController.swift in Sources */,
 				FAE228112BC149D600DFD8C3 /* TodayViewController.swift in Sources */,
+				FA1AD38B2BC1927700EE3E36 /* iTunesAPI.swift in Sources */,
 				FAE228072BC1481B00DFD8C3 /* MainTabBarViewController.swift in Sources */,
+				FA1AD3912BC19EDD00EE3E36 /* SearchViewModel.swift in Sources */,
+				FA1AD3862BC1916800EE3E36 /* iTunesAPIManager.swift in Sources */,
 				FAE227EA2BC143B600DFD8C3 /* ViewController.swift in Sources */,
+				FA1AD38D2BC19C3B00EE3E36 /* AppStore.swift in Sources */,
 				FAE228152BC14AA300DFD8C3 /* AppsViewController.swift in Sources */,
 				FAE228042BC1442B00DFD8C3 /* BaseViewController.swift in Sources */,
 				FAE227E62BC143B600DFD8C3 /* AppDelegate.swift in Sources */,
 				FAE227E82BC143B600DFD8C3 /* SceneDelegate.swift in Sources */,
+				FA1AD38F2BC19D8000EE3E36 /* SearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +505,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FA1AD3872BC191E900EE3E36 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
 		FAE227F92BC143CF00DFD8C3 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -494,6 +540,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FA1AD3882BC191E900EE3E36 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA1AD3872BC191E900EE3E36 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		FAE227FB2BC143DB00DFD8C3 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FAE227FA2BC143DB00DFD8C3 /* XCRemoteSwiftPackageReference "SnapKit" */;
@@ -508,6 +559,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FAE227FF2BC143E900DFD8C3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		FAE228182BC16A3900DFD8C3 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAE227F92BC143CF00DFD8C3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		FAE2281A2BC16A3900DFD8C3 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAE227F92BC143CF00DFD8C3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
