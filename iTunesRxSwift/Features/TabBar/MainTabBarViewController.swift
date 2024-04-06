@@ -33,6 +33,8 @@ class MainTabBarViewController: UITabBarController {
         searchVC.title = "검색"
         searchVC.tabBarItem.image = UIImage(systemName: "magnifyingglass")
         
-        setViewControllers([todayVC, gamesVC, appsVC, appleArcadeVC, searchVC], animated: true)
+        let navSearchVC = UINavigationController(rootViewController: searchVC)
+        
+        setViewControllers([todayVC, gamesVC, appsVC, appleArcadeVC, navSearchVC], animated: true)
     }
 }

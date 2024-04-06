@@ -10,32 +10,45 @@ import SnapKit
 
 final class SearchviewController: BaseViewController {
     
-    let tempLabel: UILabel = {
-        let view = UILabel()
-        view.font = .boldSystemFont(ofSize: 32)
-        view.textAlignment = .center
-        view.text = "SearchVC"
-        return view
-    }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureSearchController()
     }
     
     override func configureHierarchy() {
-        view.addSubview(tempLabel)
+        
     }
     
     override func configureConstraints() {
-        tempLabel.snp.makeConstraints { make in
-            make.center.equalTo(view.safeAreaLayoutGuide)
-            make.height.equalTo(36)
-            make.horizontalEdges.equalTo(view.safeAreaLayoutGuide).inset(16)
-        }
     }
     
     override func configureView() {
+        navigationItem.title = "검색"
         
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.largeTitleDisplayMode = .always
+    }
+    
+    private func configureSearchController() {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchBar.placeholder = "게임, 앱, 스토리 등"
+        searchController.obscuresBackgroundDuringPresentation = false
+        
+        searchController.searchResultsUpdater = self
+        
+        self.navigationItem.hidesSearchBarWhenScrolling = false
+        self.navigationItem.searchController = searchController
+    }
+}
+
+extension SearchviewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let query = searchController.searchBar.text else {
+            return
+        }
+        
+        // 
+        print("검색어: \(query)")
     }
 }
