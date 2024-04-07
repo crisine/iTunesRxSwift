@@ -20,4 +20,8 @@ struct App: Decodable {
     let averageUserRating: Double
     let artistName: String
     let genres: [String]
+    let version: String
+    let releaseNotes: String?
+    let screenshotUrls: [String]
+    let description: String
 }
