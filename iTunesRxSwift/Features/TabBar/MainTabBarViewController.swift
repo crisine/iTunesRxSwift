@@ -35,6 +35,6 @@ class MainTabBarViewController: UITabBarController {
         
         let navSearchVC = UINavigationController(rootViewController: searchVC)
         
-        setViewControllers([todayVC, gamesVC, appsVC, appleArcadeVC, navSearchVC], animated: true)
+        setViewControllers([todayVC, gamesVC, appsVC, appleArcadeVC, navSearchVC], animated: false)
     }
 }

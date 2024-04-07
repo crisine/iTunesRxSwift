@@ -14,6 +14,7 @@
 		FA1AD38F2BC19D8000EE3E36 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AD38E2BC19D8000EE3E36 /* SearchTableViewCell.swift */; };
 		FA1AD3912BC19EDD00EE3E36 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AD3902BC19EDD00EE3E36 /* SearchViewModel.swift */; };
 		FA1AD3942BC1BBED00EE3E36 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AD3932BC1BBED00EE3E36 /* AppDetailViewController.swift */; };
+		FA1AD3962BC2F6EB00EE3E36 /* AppScreenshotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AD3952BC2F6EB00EE3E36 /* AppScreenshotCollectionViewCell.swift */; };
 		FAE227E62BC143B600DFD8C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE227E52BC143B600DFD8C3 /* AppDelegate.swift */; };
 		FAE227E82BC143B600DFD8C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE227E72BC143B600DFD8C3 /* SceneDelegate.swift */; };
 		FAE227EA2BC143B600DFD8C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE227E92BC143B600DFD8C3 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 		FA1AD38E2BC19D8000EE3E36 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		FA1AD3902BC19EDD00EE3E36 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		FA1AD3932BC1BBED00EE3E36 /* AppDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
+		FA1AD3952BC2F6EB00EE3E36 /* AppScreenshotCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreenshotCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAE227E22BC143B600DFD8C3 /* iTunesRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE227E52BC143B600DFD8C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAE227E72BC143B600DFD8C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				FA1AD3932BC1BBED00EE3E36 /* AppDetailViewController.swift */,
+				FA1AD3952BC2F6EB00EE3E36 /* AppScreenshotCollectionViewCell.swift */,
 			);
 			path = AppDetail;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				FA1AD38B2BC1927700EE3E36 /* iTunesAPI.swift in Sources */,
 				FAE228072BC1481B00DFD8C3 /* MainTabBarViewController.swift in Sources */,
 				FA1AD3912BC19EDD00EE3E36 /* SearchViewModel.swift in Sources */,
+				FA1AD3962BC2F6EB00EE3E36 /* AppScreenshotCollectionViewCell.swift in Sources */,
 				FA1AD3862BC1916800EE3E36 /* iTunesAPIManager.swift in Sources */,
 				FAE227EA2BC143B600DFD8C3 /* ViewController.swift in Sources */,
 				FA1AD38D2BC19C3B00EE3E36 /* AppStore.swift in Sources */,

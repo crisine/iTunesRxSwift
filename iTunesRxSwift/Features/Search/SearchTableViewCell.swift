@@ -18,7 +18,7 @@ final class SearchTableViewCell: UITableViewCell {
     
     let appNameLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 18, weight: .bold)
+        label.font = .systemFont(ofSize: 18)
         label.textColor = .black
         return label
     }()
@@ -28,7 +28,7 @@ final class SearchTableViewCell: UITableViewCell {
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
         imageView.backgroundColor = .systemMint
-        imageView.layer.cornerRadius = 8
+        imageView.layer.cornerRadius = 16
         return imageView
     }()
     
@@ -136,7 +136,8 @@ final class SearchTableViewCell: UITableViewCell {
         
         infoStackView.snp.makeConstraints { make in
             make.top.equalTo(appIconImageView.snp.bottom).offset(8)
-            make.horizontalEdges.equalTo(contentView.safeAreaLayoutGuide).inset(16)
+            make.leading.equalTo(appIconImageView.snp.leading)
+            make.trailing.equalTo(downloadButton.snp.trailing)
             make.bottom.equalTo(contentView.snp.bottom).offset(-8)
             make.height.equalTo(20)
         }
@@ -153,18 +154,6 @@ final class SearchTableViewCell: UITableViewCell {
             make.trailing.equalTo(scoreView.safeAreaLayoutGuide).inset(4)
             make.verticalEdges.equalTo(scoreView.safeAreaLayoutGuide).inset(4)
         }
-        
-//        scoreView.snp.makeConstraints { make in
-//            make.height.equalTo(infoStackView)
-//        }
-//        
-//        sellerNameLabel.snp.makeConstraints { make in
-//            make.height.equalTo(infoStackView)
-//        }
-//        
-//        genreLabel.snp.makeConstraints { make in
-//            make.height.equalTo(infoStackView)
-//        }
     }
 }
 
