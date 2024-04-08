@@ -63,6 +63,11 @@ final class SearchviewController: BaseViewController {
         }
         .disposed(by: disposeBag)
         
+        output.error
+            .subscribe(with: self) { owner, error in
+                owner.showToast(message: error.description)
+            }
+            .disposed(by: disposeBag)
     }
     
     override func configureHierarchy() {

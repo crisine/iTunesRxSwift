@@ -215,6 +215,7 @@ extension AppDetailViewController: UICollectionViewDelegate, UICollectionViewDat
             switch result {
             case .success(let value):
                 self.screenshotCollectionView.snp.remakeConstraints { make in
+                    // MARK: 이 방법으로는 셀이 설정될때마다 크기를 재설정하게 됨
                     print("remaking heights..")
                     make.top.equalTo(self.releaseNotesLabel.snp.bottom).offset(16)
                     make.horizontalEdges.equalTo(self.contentView.safeAreaLayoutGuide).inset(16)

@@ -8,21 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		FA1AD3862BC1916800EE3E36 /* iTunesAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AD3852BC1916800EE3E36 /* iTunesAPIManager.swift */; };
-		FA1AD3892BC191E900EE3E36 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FA1AD3882BC191E900EE3E36 /* Alamofire */; };
 		FA1AD38B2BC1927700EE3E36 /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AD38A2BC1927700EE3E36 /* iTunesAPI.swift */; };
 		FA1AD38D2BC19C3B00EE3E36 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AD38C2BC19C3B00EE3E36 /* AppStore.swift */; };
 		FA1AD38F2BC19D8000EE3E36 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AD38E2BC19D8000EE3E36 /* SearchTableViewCell.swift */; };
 		FA1AD3912BC19EDD00EE3E36 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AD3902BC19EDD00EE3E36 /* SearchViewModel.swift */; };
 		FA1AD3942BC1BBED00EE3E36 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AD3932BC1BBED00EE3E36 /* AppDetailViewController.swift */; };
 		FA1AD3962BC2F6EB00EE3E36 /* AppScreenshotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AD3952BC2F6EB00EE3E36 /* AppScreenshotCollectionViewCell.swift */; };
+		FABCBA4A2BC44B17009129E5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FABCBA492BC44B17009129E5 /* Alamofire */; };
+		FABCBA4C2BC44B17009129E5 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FABCBA4B2BC44B17009129E5 /* AlamofireDynamic */; };
+		FABCBA4F2BC44B1F009129E5 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FABCBA4E2BC44B1F009129E5 /* RxCocoa */; };
+		FABCBA512BC44B1F009129E5 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FABCBA502BC44B1F009129E5 /* RxSwift */; };
+		FABCBA542BC44B24009129E5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FABCBA532BC44B24009129E5 /* Kingfisher */; };
+		FABCBA572BC44B2E009129E5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FABCBA562BC44B2E009129E5 /* SnapKit */; };
+		FABCBA592BC44B2E009129E5 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FABCBA582BC44B2E009129E5 /* SnapKit-Dynamic */; };
+		FABCBA5C2BC45F27009129E5 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = FABCBA5B2BC45F27009129E5 /* Toast */; };
 		FAE227E62BC143B600DFD8C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE227E52BC143B600DFD8C3 /* AppDelegate.swift */; };
 		FAE227E82BC143B600DFD8C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE227E72BC143B600DFD8C3 /* SceneDelegate.swift */; };
 		FAE227EA2BC143B600DFD8C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE227E92BC143B600DFD8C3 /* ViewController.swift */; };
 		FAE227EF2BC143B700DFD8C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE227EE2BC143B700DFD8C3 /* Assets.xcassets */; };
 		FAE227F22BC143B700DFD8C3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FAE227F12BC143B700DFD8C3 /* Base */; };
-		FAE227FC2BC143DB00DFD8C3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FAE227FB2BC143DB00DFD8C3 /* SnapKit */; };
-		FAE227FE2BC143DB00DFD8C3 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FAE227FD2BC143DB00DFD8C3 /* SnapKit-Dynamic */; };
-		FAE228012BC143E900DFD8C3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FAE228002BC143E900DFD8C3 /* Kingfisher */; };
 		FAE228042BC1442B00DFD8C3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE228032BC1442B00DFD8C3 /* BaseViewController.swift */; };
 		FAE228072BC1481B00DFD8C3 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE228062BC1481B00DFD8C3 /* MainTabBarViewController.swift */; };
 		FAE2280B2BC1484A00DFD8C3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2280A2BC1484A00DFD8C3 /* SearchViewController.swift */; };
@@ -30,8 +34,6 @@
 		FAE228132BC14A8200DFD8C3 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE228122BC14A8200DFD8C3 /* GamesViewController.swift */; };
 		FAE228152BC14AA300DFD8C3 /* AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE228142BC14AA300DFD8C3 /* AppsViewController.swift */; };
 		FAE228172BC14ABC00DFD8C3 /* AppleArcadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE228162BC14ABC00DFD8C3 /* AppleArcadeViewController.swift */; };
-		FAE228192BC16A3900DFD8C3 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FAE228182BC16A3900DFD8C3 /* RxCocoa */; };
-		FAE2281B2BC16A3900DFD8C3 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FAE2281A2BC16A3900DFD8C3 /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,12 +65,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE228012BC143E900DFD8C3 /* Kingfisher in Frameworks */,
-				FAE227FC2BC143DB00DFD8C3 /* SnapKit in Frameworks */,
-				FAE2281B2BC16A3900DFD8C3 /* RxSwift in Frameworks */,
-				FA1AD3892BC191E900EE3E36 /* Alamofire in Frameworks */,
-				FAE228192BC16A3900DFD8C3 /* RxCocoa in Frameworks */,
-				FAE227FE2BC143DB00DFD8C3 /* SnapKit-Dynamic in Frameworks */,
+				FABCBA5C2BC45F27009129E5 /* Toast in Frameworks */,
+				FABCBA4F2BC44B1F009129E5 /* RxCocoa in Frameworks */,
+				FABCBA4A2BC44B17009129E5 /* Alamofire in Frameworks */,
+				FABCBA512BC44B1F009129E5 /* RxSwift in Frameworks */,
+				FABCBA572BC44B2E009129E5 /* SnapKit in Frameworks */,
+				FABCBA4C2BC44B17009129E5 /* AlamofireDynamic in Frameworks */,
+				FABCBA592BC44B2E009129E5 /* SnapKit-Dynamic in Frameworks */,
+				FABCBA542BC44B24009129E5 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,12 +219,14 @@
 			);
 			name = iTunesRxSwift;
 			packageProductDependencies = (
-				FAE227FB2BC143DB00DFD8C3 /* SnapKit */,
-				FAE227FD2BC143DB00DFD8C3 /* SnapKit-Dynamic */,
-				FAE228002BC143E900DFD8C3 /* Kingfisher */,
-				FAE228182BC16A3900DFD8C3 /* RxCocoa */,
-				FAE2281A2BC16A3900DFD8C3 /* RxSwift */,
-				FA1AD3882BC191E900EE3E36 /* Alamofire */,
+				FABCBA492BC44B17009129E5 /* Alamofire */,
+				FABCBA4B2BC44B17009129E5 /* AlamofireDynamic */,
+				FABCBA4E2BC44B1F009129E5 /* RxCocoa */,
+				FABCBA502BC44B1F009129E5 /* RxSwift */,
+				FABCBA532BC44B24009129E5 /* Kingfisher */,
+				FABCBA562BC44B2E009129E5 /* SnapKit */,
+				FABCBA582BC44B2E009129E5 /* SnapKit-Dynamic */,
+				FABCBA5B2BC45F27009129E5 /* Toast */,
 			);
 			productName = iTunesRxSwift;
 			productReference = FAE227E22BC143B600DFD8C3 /* iTunesRxSwift.app */;
@@ -251,10 +257,11 @@
 			);
 			mainGroup = FAE227D92BC143B600DFD8C3;
 			packageReferences = (
-				FAE227F92BC143CF00DFD8C3 /* XCRemoteSwiftPackageReference "RxSwift" */,
-				FAE227FA2BC143DB00DFD8C3 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				FAE227FF2BC143E900DFD8C3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				FA1AD3872BC191E900EE3E36 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FABCBA482BC44B17009129E5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FABCBA4D2BC44B1F009129E5 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				FABCBA522BC44B24009129E5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				FABCBA552BC44B2E009129E5 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				FABCBA5A2BC45F27009129E5 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = FAE227E32BC143B600DFD8C3 /* Products */;
 			projectDirPath = "";
@@ -521,7 +528,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FA1AD3872BC191E900EE3E36 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		FABCBA482BC44B17009129E5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -529,7 +536,7 @@
 				minimumVersion = 5.9.1;
 			};
 		};
-		FAE227F92BC143CF00DFD8C3 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		FABCBA4D2BC44B1F009129E5 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
 			requirement = {
@@ -537,15 +544,7 @@
 				minimumVersion = 6.6.0;
 			};
 		};
-		FAE227FA2BC143DB00DFD8C3 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.7.1;
-			};
-		};
-		FAE227FF2BC143E900DFD8C3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		FABCBA522BC44B24009129E5 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -553,38 +552,64 @@
 				minimumVersion = 7.11.0;
 			};
 		};
+		FABCBA552BC44B2E009129E5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		FABCBA5A2BC45F27009129E5 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FA1AD3882BC191E900EE3E36 /* Alamofire */ = {
+		FABCBA492BC44B17009129E5 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FA1AD3872BC191E900EE3E36 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = FABCBA482BC44B17009129E5 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		FAE227FB2BC143DB00DFD8C3 /* SnapKit */ = {
+		FABCBA4B2BC44B17009129E5 /* AlamofireDynamic */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FAE227FA2BC143DB00DFD8C3 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
+			package = FABCBA482BC44B17009129E5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
 		};
-		FAE227FD2BC143DB00DFD8C3 /* SnapKit-Dynamic */ = {
+		FABCBA4E2BC44B1F009129E5 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FAE227FA2BC143DB00DFD8C3 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
-		};
-		FAE228002BC143E900DFD8C3 /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FAE227FF2BC143E900DFD8C3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-		FAE228182BC16A3900DFD8C3 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FAE227F92BC143CF00DFD8C3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = FABCBA4D2BC44B1F009129E5 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
 		};
-		FAE2281A2BC16A3900DFD8C3 /* RxSwift */ = {
+		FABCBA502BC44B1F009129E5 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FAE227F92BC143CF00DFD8C3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = FABCBA4D2BC44B1F009129E5 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		FABCBA532BC44B24009129E5 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FABCBA522BC44B24009129E5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		FABCBA562BC44B2E009129E5 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FABCBA552BC44B2E009129E5 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		FABCBA582BC44B2E009129E5 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FABCBA552BC44B2E009129E5 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		FABCBA5B2BC45F27009129E5 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FABCBA5A2BC45F27009129E5 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

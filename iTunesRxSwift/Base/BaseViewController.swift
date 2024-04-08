@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Toast
 
 class BaseViewController: UIViewController {
 
@@ -24,4 +25,8 @@ class BaseViewController: UIViewController {
     func configureConstraints() {}
     
     func configureView() {}
+    
+    func showToast(message: String) {
+        view.makeToast(message)
+    }
 }
